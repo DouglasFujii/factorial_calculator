@@ -8,9 +8,15 @@ function showResult() {
     resultElement.innerHTML = '';
 
     description.innerHTML = 'O resultado de ' + inputFactorial.value + '! é:'
-    factResult.innerHTML = extraLongFactorials(inputFactorial.value);
-    resultElement.appendChild(description)
+    factResult.innerHTML = formatNumber(extraLongFactorials(inputFactorial.value));
+    resultElement.appendChild(description);
     resultElement.appendChild(factResult);
+}
+
+function formatNumber(num) {
+    let res = BigInt(num);
+    // The toLocaleString() method converts a number into a string, using a local language format.
+    return res.toLocaleString('pt-BR');    
 }
 
 function extraLongFactorials(n) {

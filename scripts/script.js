@@ -1,7 +1,16 @@
 const inputFactorial = document.getElementById('factorial');
 
 function showResult() {
-    console.log(extraLongFactorials(inputFactorial.value));
+    const resultElement = document.getElementById('result');
+    const description = document.createElement('p');
+    const factResult = document.createElement('h1');
+
+    resultElement.innerHTML = '';
+
+    description.innerHTML = 'O resultado de ' + inputFactorial.value + '! é:'
+    factResult.innerHTML = extraLongFactorials(inputFactorial.value);
+    resultElement.appendChild(description)
+    resultElement.appendChild(factResult);
 }
 
 function extraLongFactorials(n) {

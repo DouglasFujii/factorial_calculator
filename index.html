@@ -12,20 +12,22 @@
 <body>
 
     <section id="container">
-        <h1>Calculadora fatorial</h1>
+        <h1>Calculadora Fatorial</h1>
 
         <p>Na matemática, o fatorial de um número natural n, representado por n!, é o produto de todos os inteiros positivos menores ou iguais a n. A notação n! foi introduzida por Christian Kramp em 1808.</p>
 
         <p>O fatorial é representado por:</p>
 
-        <h1>n! = n x (n - 1) x (n - 2) x ... x 3 x 2 x 1</h1>
+        <h2>n! = n x (n - 1) x (n - 2) x ... x 3 x 2 x 1</h1>
 
-        <input id="factorial" type="number" name="fatorial" placeholder="Insira um número inteiro">
-        <button onclick="showResult()">Calcular!</button>
+        <div id="input">
+            <input id="factorial" type="number" name="fatorial" placeholder="Insira um número inteiro">
+            <button onclick="showResult()">Calcular!</button>
+        </div>
 
         <div id="result"></div>
     </section>
-    
+
     <script src="./scripts/script.js"></script>
 </body>
 

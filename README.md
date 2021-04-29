@@ -1,0 +1,4 @@
+<h1 align="center">Calculadora de fatorial</h1>
+<p>Esse projeto foi inspirado em um desafio do <a href="https://www.hackerrank.com/dashboard">HackerRank</a> chamado <a href="https://www.hackerrank.com/challenges/extra-long-factorials/problem?h_r=next-challenge&h_v=zen">Extra Long Factorials</a>.</p>
+<p>O desafio consistia em criar uma função que calculasse e imprisse o fatorial de um determinado número inteiro.</p>
+<p>Com esse desafio aprendi a lidar com números maiores que quinze dígitos sem adicionar vírgula ou notação expoente, pois o JavaScript é capaz de armazenar números em até 64 bits, tendo precisão apenas até quinze dígitos.</p>
